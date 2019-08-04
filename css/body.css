@@ -79,8 +79,9 @@ html, body
 
 .container .site .main .text
 {
+	margin-top: 20vh;
 	text-align: center;
-	padding: 36vh 0;
+	padding: 16vh 0;
 }
 
 .container .site .main .text *
@@ -162,7 +163,7 @@ html, body
 
 	.container .site .main .text
 	{
-		padding: 24vh 0 !important;
+		padding: 0vh 0 !important;
 	}
 }
 
