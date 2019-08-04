@@ -1,0 +1,35 @@
+body {
+	background-color: #FFF;
+}
+
+#codeblock {
+	color: #000;
+}
+
+#codeblock .red {
+	color: #c695c6;
+}
+
+#codeblock .blue {
+	color: #c695c6;
+}
+
+#codeblock .purple {
+	color: #f9ae61;
+}
+
+#codeblock .yellow {
+	color: #99c794;
+}
+
+#codeblock .green {
+	color: #5fb4b4;
+}
+
+#codeblock .orange {
+	color: #f9ae58;
+}
+
+#codeblock .gray {
+	color: #999;
+}

@@ -1,0 +1,178 @@
+:root
+{
+   --transparency: 0.85;
+   font-family: Carlito, Sans-serif, Arial;
+}
+
+html, body
+{
+	height: 100%;
+	margin: 0;
+}
+
+.hidden {
+	display: none;
+}
+
+.container div
+{
+	position: absolute;
+}
+
+.container .background
+{
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
+}
+
+.container .background #codeblock
+{   
+	margin-left: 15px;
+}
+
+.container .site
+{
+	background-color: rgba(255,255,255,var(--transparency));
+	height: 100%; 
+	width: 100%;
+}
+
+.container .site div
+{
+	position: relative;
+}
+
+.container .site .menu
+{
+	background-color: rgba(255,255,255,var(--transparency));
+	height: auto;
+	width: 100%;
+}
+
+.container .site .menu .title
+{
+	font-size: 3em;
+	margin-left: 65px;
+	float: left;
+	margin-left: 40px;
+	margin-top: 5px;
+	margin-right: auto;
+}
+
+.container .site .menu .items
+{
+	font-size: 2.8em;
+	word-spacing: 16px;
+	float: right;
+	margin-left: auto;
+	margin-top: 10px;
+	margin-right: 40px;
+}
+
+.container .site .menu .items a:link,
+.container .site .menu .items a:visited
+{
+	color: black;
+	text-decoration: none;
+}
+
+.container .site .main .text
+{
+	text-align: center;
+	padding: 36vh 0;
+}
+
+.container .site .main .text *
+{
+	margin: 0 !important;
+	overflow: hidden !important;
+}
+
+.container .site .main .text #title
+{
+	font-size: 3.5em;
+	margin: 22px;
+}
+
+.container .site .main .text #subheading
+{
+	font-size: 1.5em;	
+}
+
+.container .site .statusbar
+{
+	background-color: rgba(255,255,255,var(--menu-transparency));
+	height: auto;
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+}
+
+
+.container .site .statusbar .left
+{
+	float: left;
+	margin-left: 40px;
+	margin-right: auto;
+	margin-top: 1.5vh;
+}
+
+.container .site .statusbar .left .fa-heart
+{
+	color: red;
+}
+
+.container .site .statusbar .right
+{
+	float: right;
+	margin-left: auto;
+	margin-right: 40px;
+}
+
+.container .site .statusbar .right a:link,
+.container .site .statusbar .right a:visited
+{
+	color: black;
+}
+
+@media screen and (max-width:480px)
+{
+	.container .site .menu
+	{
+		text-align: center;
+		display: inline-block;
+		justify-content: center;
+	}
+
+	.container .site .menu .items,
+	.container .site .menu .title
+	{
+		margin: 0 !important;
+		text-align: center !important;
+		float: none !important;
+		align-self: center;
+	}
+
+	.container .site .menu .items
+	{
+		font-size: 3em;
+		word-spacing: 32px;
+	}
+
+	.container .site .main .text
+	{
+		padding: 24vh 0 !important;
+	}
+}
+
+@media screen and (max-width:560px)
+{
+	.container .site .statusbar *
+	{
+		margin: 0 !important;
+		text-align: center !important;
+		float: none !important;
+		align-self: center;
+	}
+}
