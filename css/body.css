@@ -4,6 +4,10 @@
    --icon-color: #f3f3f3;
    --icon-width: 50px;
    --icon-height: 50px;
+
+   --transparency-color: 255;
+   --font-color: black;
+
    font-family: Carlito, Sans-serif, Arial;
 }
 
@@ -11,6 +15,7 @@ html, body
 {
 	height: 100%;
 	margin: 0;
+	color: var(--font-color);
 }
 
 .hidden {
@@ -36,7 +41,7 @@ html, body
 
 .container .site
 {
-	background-color: rgba(255,255,255,var(--transparency));
+	background-color: rgba(var(--transparency-color) ,var(--transparency-color) ,var(--transparency-color) ,var(--transparency));
 	height: 100%; 
 	width: 100%;
 }
@@ -48,7 +53,7 @@ html, body
 
 .container .site .menu
 {
-	background-color: rgba(255, 255 ,255 ,var(--transparency));
+	background-color: rgba(var(--transparency-color), var(--transparency-color), var(--transparency-color),var(--transparency));
 	height: auto;
 	width: 100%;
 }
@@ -89,7 +94,7 @@ html, body
 .container .site .menu .items a:link,
 .container .site .menu .items a:visited
 {
-	color: black;
+	color: var(--font-color);;
 	text-decoration: none;
 }
 
@@ -150,7 +155,7 @@ html, body
 .container .site .statusbar .right a:link,
 .container .site .statusbar .right a:visited
 {
-	color: black;
+	color: var(--font-color);
 }
 
 @media screen and (max-width:540px)
@@ -191,5 +196,14 @@ html, body
 		text-align: center !important;
 		float: none !important;
 		align-self: center;
+	}
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		--icon-color: #111;
+
+		--transparency-color: 5;
+		--font-color: white;
 	}
 }

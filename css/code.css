@@ -33,3 +33,42 @@ body {
 #codeblock .gray {
 	color: #999;
 }
+
+
+@media (prefers-color-scheme: dark) {
+	body {
+	background-color: #282923;
+	}
+
+	#codeblock {
+		color: #FFF;
+	}
+
+	#codeblock .red {
+		color: #f82472;
+	}
+
+	#codeblock .blue {
+		color: #67d8ef;
+	}
+
+	#codeblock .purple {
+		color: #ac80fa;
+	}
+
+	#codeblock .yellow {
+		color: #e7db74;
+	}
+
+	#codeblock .green {
+		color: #a6e22c;
+	}
+
+	#codeblock .orange {
+		color: #fd9621;
+	}
+
+	#codeblock .gray {
+		color: #fd9621;
+	}
+}
