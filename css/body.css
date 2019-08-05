@@ -1,6 +1,9 @@
 :root
 {
    --transparency: 0.85;
+   --icon-color: #f3f3f3;
+   --icon-width: 50px;
+   --icon-height: 50px;
    font-family: Carlito, Sans-serif, Arial;
 }
 
@@ -45,14 +48,14 @@ html, body
 
 .container .site .menu
 {
-	background-color: rgba(255,255,255,var(--transparency));
+	background-color: rgba(255, 255 ,255 ,var(--transparency));
 	height: auto;
 	width: 100%;
 }
 
 .container .site .menu .title
 {
-	font-size: 3em;
+	font-size: 3.2em;
 	margin-left: 65px;
 	float: left;
 	margin-left: 40px;
@@ -62,12 +65,25 @@ html, body
 
 .container .site .menu .items
 {
-	font-size: 2.8em;
+	font-size: 2.7em;
 	word-spacing: 16px;
 	float: right;
 	margin-left: auto;
 	margin-top: 10px;
 	margin-right: 40px;
+
+	display: block;
+}
+
+.container .site .menu .items a
+{
+	width: var(--icon-width);
+	height: var(--icon-height);
+	text-align: center;
+	line-height: var(--icon-height);
+	background-color: var(--icon-color);
+	border: 6px solid var(--icon-color);
+	border-radius: 100%;
 }
 
 .container .site .menu .items a:link,
@@ -81,7 +97,7 @@ html, body
 {
 	margin-top: 20vh;
 	text-align: center;
-	padding: 16vh 0;
+	padding: 18vh 0;
 }
 
 .container .site .main .text *
@@ -137,7 +153,7 @@ html, body
 	color: black;
 }
 
-@media screen and (max-width:480px)
+@media screen and (max-width:540px)
 {
 	.container .site .menu
 	{
@@ -158,7 +174,7 @@ html, body
 	.container .site .menu .items
 	{
 		font-size: 3em;
-		word-spacing: 32px;
+		word-spacing: 22px;
 	}
 
 	.container .site .main .text
