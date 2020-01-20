@@ -100,7 +100,7 @@ html, body
 
 .container .site .main .text
 {
-	margin-top: 20vh;
+	margin-top: 25vh;
 	text-align: center;
 	padding: 18vh 0;
 }
@@ -184,7 +184,7 @@ html, body
 
 	.container .site .main .text
 	{
-		padding: 0vh 0 !important;
+		padding: 5vh 0 !important;
 	}
 }
 
