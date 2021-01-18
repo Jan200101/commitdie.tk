@@ -1,0 +1,173 @@
+:root
+{
+   --transparency: 0.85;
+   --icon-color: var(--background-color);
+   --icon-background: var(--font-color);
+   --icon-width: 50px;
+   --icon-height: 50px;
+
+
+   --background-color: #181915;
+   --font-color: white;
+
+   font-family: Carlito, Sans-serif, Arial;
+}
+
+html, body
+{
+    scroll-behavior: smooth;
+    height: 100%;
+    margin: 0;
+    color: var(--font-color);
+    background-color: var(--background-color);
+}
+
+a:link,
+a:visited
+{
+    color: var(--font-color);
+    text-decoration: none;
+}
+
+h1
+{
+    margin: 0;
+}
+
+.container
+{
+    width: 100%;
+    height: 100%;
+}
+
+.container .right,
+.container .left
+{
+    display: flex;
+    position: relative;
+
+    height: 100%;
+    width: 50%;
+
+    align-items: center; 
+    justify-content: center;
+
+}
+
+.container .right
+{
+    float: right;
+}
+
+.container .left
+{
+    float: left;
+}
+
+.container div .person,
+.container div .info
+{
+    display: flex;
+}
+
+.container div .person
+{
+    width: 35vw;
+
+}
+
+.container div .person .description
+{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.container div .person .description img
+{
+    width: 192px;
+    border-radius: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container div .person .description .arrow
+{
+    position: absolute;
+    display: none;
+    bottom: 10%;
+    left: 0;
+    right: 0;
+    font-size: 2.5em;
+}
+
+.container div .info
+{
+    width: 45vw;
+}
+
+ul
+{
+    list-style-type: none;
+}
+
+.container div .info .links
+{
+    word-spacing: 8px;
+}
+
+.container div .info .links a
+{
+    font-size: 2.7em;
+    width: var(--icon-width);
+    height: var(--icon-height);
+    text-align: center;
+    line-height: var(--icon-height);
+    color: var(--icon-color);
+    background-color: var(--icon-background);
+    border: 7px solid var(--icon-background);
+    border-radius: 100%;
+    margin-bottom: 15px;
+}
+
+.container div .info .links a:link,
+.container div .info .links a:visited
+{
+    color: var(--icon-color);
+    text-decoration: none;
+}
+
+@media screen and (max-width:990px)
+{
+    .container div .info
+    {
+        width: 30vw;
+    }
+}
+
+@media screen and (max-width:800px)
+{
+    .container
+    {
+        height: 105%;
+    }
+
+    .container .right,
+    .container .left
+    {
+        width: 100%;
+    }
+
+    .container div .info,
+    .container div .person
+    {
+        width: 75% !important;
+    }
+
+    .container div .person .description .arrow
+    {
+        display: block;
+    }
+}

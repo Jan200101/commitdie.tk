@@ -1,0 +1,9 @@
+ 
+@font-face {
+  font-family: 'Carlito';
+  font-style: normal;
+  font-weight: normal;
+  font-display: auto;
+  font-display: swap;
+  src: url("../thirdparty/carlito/Carlito-Regular.ttf") format("truetype");
+}
