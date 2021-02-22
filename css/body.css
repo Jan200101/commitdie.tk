@@ -139,7 +139,7 @@ ul
     text-decoration: none;
 }
 
-@media screen and (max-width:990px)
+@media screen and (max-width:1080px)
 {
     .container div .info
     {
@@ -147,7 +147,7 @@ ul
     }
 }
 
-@media screen and (max-width:800px)
+@media screen and (max-width:860px)
 {
     .container
     {
