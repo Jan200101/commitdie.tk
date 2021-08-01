@@ -29,6 +29,12 @@ a:visited
     text-decoration: none;
 }
 
+.underline:link,
+.underline:visited
+{
+    text-decoration: underline;
+}
+
 h1
 {
     margin: 0;
