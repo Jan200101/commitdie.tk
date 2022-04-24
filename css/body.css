@@ -145,7 +145,7 @@ ul
     text-decoration: none;
 }
 
-@media screen and (max-width:1080px)
+@media screen and (max-width:1075px)
 {
     .container div .info
     {
@@ -153,7 +153,8 @@ ul
     }
 }
 
-@media screen and (max-width:860px)
+@media screen and (max-width:930px),    
+       screen and (max-height:640px)
 {
     .container
     {
@@ -172,8 +173,17 @@ ul
         width: 75% !important;
     }
 
-    .container div .person .description .arrow
-    {
-        display: block;
+    @media screen and (min-height: 420px)
+    {    
+        .container div .person .description .arrow
+        {
+            display: block;
+        }
     }
 }
+
+.language { float: right }
+
+.circle-lang-python { color: #3572A5; }
+.circle-lang-c { color: #555555; }
+.circle-lang-cxx { color: #f34b7d; }
