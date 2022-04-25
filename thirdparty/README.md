@@ -1,3 +1,3 @@
-## [Font Awesome](fontawesome/LICENSE.txt)  
+## [Font Awesome 6.1.1](fontawesome/LICENSE.txt)  
 
 ## [Carlito](carlito/LICENSE)
