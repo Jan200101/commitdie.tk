@@ -146,6 +146,21 @@ ul
     text-decoration: none;
 }
 
+.container div .projects {
+    padding: 0 15px 0 15px;
+    margin: 16px 0 16px 0;
+}
+
+.container div .projects table {
+    table-layout: fixed;;
+    border-spacing: 25px;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    max-width: 1080px;
+}
+
 @media screen and (max-width:1075px)
 {
     .container div .info
@@ -186,5 +201,7 @@ ul
 .language { float: right }
 
 .circle-lang-python { color: #3572A5; }
+.circle-lang-lua { color: #000080; }
 .circle-lang-c { color: #555555; }
 .circle-lang-cxx { color: #f34b7d; }
+.circle-lang-rust { color: #dea584; }
