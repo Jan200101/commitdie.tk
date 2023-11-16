@@ -2,6 +2,7 @@
 {
    --transparency: 0.85;
    --icon-color: var(--background-color);
+   --icon-hover-color: #404040;
    --icon-background: var(--font-color);
    --icon-width: 50px;
    --icon-height: 50px;
@@ -29,6 +30,7 @@ a:visited
     text-decoration: none;
 }
 
+.underline,
 .underline:link,
 .underline:visited
 {
@@ -55,7 +57,7 @@ h1
     height: 100%;
     width: 50%;
 
-    align-items: center; 
+    align-items: center;
     justify-content: center;
 
 }
@@ -70,10 +72,13 @@ h1
     float: left;
 }
 
-.container div .person,
-.container div .info
+.container div .info,
+.container div .person
 {
     display: flex;
+    vertical-align: top;
+    hyphens: auto;
+    overflow-wrap: break-word;
 }
 
 .container div .person
@@ -115,7 +120,7 @@ h1
     width: 45vw;
 }
 
-ul
+.container div .info ul
 {
     list-style-type: none;
 }
@@ -146,13 +151,21 @@ ul
     text-decoration: none;
 }
 
+.container div .info .links a:hover
+{
+    color: var(--icon-hover-color);
+}
+
+.container div .info .more {
+    padding-left: 10px;
+}
+
 .container div .projects {
     padding: 0 15px 0 15px;
     margin: 16px 0 16px 0;
 }
 
 .container div .projects table {
-    table-layout: fixed;;
     border-spacing: 25px;
 
     margin-left: auto;
@@ -161,15 +174,21 @@ ul
     max-width: 1080px;
 }
 
-@media screen and (max-width:1075px)
+.container div .projects table td,
+.container div .projects table th
 {
-    .container div .info
-    {
-        width: 30vw;
-    }
+    vertical-align: top;
+    hyphens: auto;
+    overflow-wrap: break-word;
 }
 
-@media screen and (max-width:930px),    
+.container div .info a:link:hover,
+.container div .projects a:link:hover
+{
+    text-decoration: underline;
+}
+
+@media screen and (max-width:930px),
        screen and (max-height:640px)
 {
     .container
@@ -189,8 +208,12 @@ ul
         width: 75% !important;
     }
 
+    .container div .info ul {
+        padding-inline-start: 20px;
+    }
+
     @media screen and (min-height: 420px)
-    {    
+    {
         .container div .person .description .arrow
         {
             display: block;
@@ -198,7 +221,41 @@ ul
     }
 }
 
-.language { float: right }
+@media screen and (max-width:440px)
+{
+    .container div .info,
+    .container div .person
+    {
+        width: 85% !important;
+    }
+}
+
+@media screen and (max-width:390px)
+{
+    .container div .info,
+    .container div .person
+    {
+        width: 95% !important;
+    }
+
+    .container div .info ul {
+        padding-inline-start: 0;
+    }
+}
+
+
+@media screen and (max-width: 580px)
+{
+    .container div .projects
+    {
+        padding: 0;
+    }
+}
+
+.language {
+    float: right;
+    font-weight: bold;
+}
 
 .circle-lang-python { color: #3572A5; }
 .circle-lang-lua { color: #000080; }
