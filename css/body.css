@@ -161,7 +161,6 @@ h1
 }
 
 .container div .projects {
-    padding: 0 15px 0 15px;
     margin: 16px 0 16px 0;
 }
 
@@ -182,7 +181,6 @@ h1
     overflow-wrap: break-word;
 }
 
-.container div .info a:link:hover,
 .container div .projects a:link:hover
 {
     text-decoration: underline;
